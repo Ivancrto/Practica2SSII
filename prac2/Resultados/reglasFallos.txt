@@ -1,0 +1,54 @@
+@relation asociativoFallos
+
+@attribute c1 {t}
+@attribute c2 {t}
+@attribute c3 {t}
+@attribute c4 {t}
+@attribute c5 {t}
+@attribute c6 {t}
+@attribute c7 {t}
+@attribute c8 {t}
+@attribute c9 {t}
+@attribute c10 {t}
+@attribute c11 {t}
+@attribute c12 {t}
+@attribute c13 {t}
+@attribute c14 {t}
+@attribute c15 {t}
+@attribute c16 {t}
+@attribute c17 {t}
+@attribute c18 {t}
+@attribute c19 {t}
+@attribute c20 {t}
+
+@data
+ ...
+
+
+Apriori
+=======
+
+Minimum support: 0.95 (242 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 3
+
+Size of set of large itemsets L(2): 3
+
+Size of set of large itemsets L(3): 1
+
+Best rules found:
+
+ 1. c5=t 254 ==> c1=t 253    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 2. c1=t 254 ==> c5=t 253    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 3. c14=t 254 ==> c1=t 253    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 4. c1=t 254 ==> c14=t 253    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 5. c14=t 254 ==> c5=t 253    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 6. c5=t 254 ==> c14=t 253    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 7. c5=t c14=t 253 ==> c1=t 252    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 8. c1=t c14=t 253 ==> c5=t 252    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+ 9. c1=t c5=t 253 ==> c14=t 252    <conf:(1)> lift:(1) lev:(-0) [0] conv:(0.5)
+10. c14=t 254 ==> c1=t c5=t 252    <conf:(0.99)> lift:(1) lev:(-0) [0] conv:(0.66)
